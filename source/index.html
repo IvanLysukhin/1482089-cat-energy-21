@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -30,23 +31,26 @@
   <main class="page-main">
     <h1 class="visually-hidden">Магазин функционального питания для котов</h1>
     <section class="preview">
-      <div class="wrapper">
-        <h2 class="preview__title">Функциональное питание для котов</h2>
-        <p class="preview__text">Занялся собой? Займись котом!</p>
-        <img src="https://via.placeholder.com/280x270" width="280" height="270" alt="Изображение Cat Energy с курицей">
-        <a class="button preview__link" href="form.html">Подобрать программу</a>
+      <div class="overlay-box">
+        <div class="wrapper">
+          <h2 class="preview__title">Функциональное питание для котов</h2>
+          <p class="preview__text">Занялся собой? Займись котом!</p>
+          <img src="https://via.placeholder.com/280x270" width="280" height="270" alt="Изображение Cat Energy с курицей">
+          <a class="button preview__link" href="form.html">Подобрать программу</a>
+        </div>
       </div>
     </section>
     <section class="programs">
+      <h2 class="visually-hidden">Типы программ</h2>
       <ul class="programs__list">
         <li class="programs__item">
-          <h2 class="programs__title">Похудение</h2>
+          <h3 class="programs__title">Похудение</h3>
           <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
             диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="programs__link" href="catalog.html">каталог slim</a>
         </li>
         <li class="programs__item">
-          <h2 class="programs__title">Набор массы</h2>
+          <h3 class="programs__title">Набор массы</h3>
           <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
             вашему коту нарастить необходимые мышцы!</p>
           <a class="programs__link" href="catalog.html">каталог pro</a>
@@ -55,7 +59,7 @@
     </section>
     <section class="benefits">
       <h2 class="visually-hidden">Преимущества Cat Energy</h2>
-      <h3 class="benefits__text">Как это работает</h3>
+      <h3 class="benefits__title">Как это работает</h3>
       <ul class="benefits__list">
         <li class="benefits__item">
           <p class="benefits__description">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -134,7 +138,7 @@
           <svg class="copyright__pic">
             <path d="" />
           </svg>
-          ></a>
+        </a>
       </div>
     </footer>
   </main>
