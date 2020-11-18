@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#"><img class="main-nav__logo" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип Cat Energy"></a>
-            <a class="main-nav__link headline" href="#">Cat energy</a>
+            <a class="main-nav__link" href="index.html"><img class="main-nav__logo" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип Cat Energy"></a>
+            <a class="main-nav__link headline" href="index.html">Cat energy</a>
             <button class="main-nav__button-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -31,19 +32,15 @@
         <p class="form-box__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <fieldset class="form-box__field name-form">
           <legend class="visually-hidden">Первичные данные кота</legend>
-          <ul class="name-form__list">
+          <ul class="form-box--list name-form__list">
             <li class="name-form__item">
               <label class="name-form__label" for="name">Имя:<sup>*</sup></label>
               <input class="name-form__cat-data" type="text" name="name" id="name" placeholder="Барсик">
             </li>
-          </ul>
-          <ul class="name-form__list">
             <li class="name-form__item">
               <label class="name-form__label" for="weight">Вес(кг):<sup>*</sup></label>
               <input class="name-form__cat-data" type="number" name="weight" id="weight" placeholder="7">
             </li>
-          </ul>
-          <ul class="name-form__list">
             <li class="name-form__item">
               <label class="name-form__label" for="age">Возраст(лет):</label>
               <input class="name-form__cat-data" type="number" name="age" id="age" placeholder="7">
@@ -52,7 +49,7 @@
         </fieldset>
         <fieldset class="form-box__field radio-form">
           <legend class="visually-hidden">Выбор программы</legend>
-          <ul class="radio-form__list">
+          <ul class="form-box--list radio-form__list">
             <li class="radio-form__item">
               <input class="radio-form__input visually-hidden" type="radio" name="program" id="slim" value="slim">
               <label class="radio-form__label" for="slim">Похудение</label>
@@ -69,7 +66,7 @@
         </fieldset>
         <fieldset class="form-box__field contact-form">
           <legend class="form-box__title contact-form__title">Контактные данные (владельца кота)</legend>
-          <ul class="contact-form__list">
+          <ul class="form-box--list contact-form__list">
             <li class="contact-form__item">
               <label class="contact-form__label" for="email">e-mail:*</label>
               <input class="contact-form__data" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
@@ -83,26 +80,26 @@
         <fieldset class="form-box__field comment-form">
           <legend class="form-box__title comment-form__title">Комментарий</legend>
           <label class="visually-hidden" for="comment">Поле для ввода комментария</label>
-          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="comment-form--input" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form-box__field additionally-form">
           <legend class="form-box__title additionally-form__title">Дополнительно</legend>
-          <ul class="additionally-form__list">
+          <ul class="form-box--list additionally-form__list">
             <li class="additionally-form__item">
               <input class="additionally-form__input visually-hidden" type="checkbox" name="not-sugar" id="not-sugar" checked>
-              <label for="not-sugar">сахарозаменитель</label>
+              <label class="additionally-form--label" for="not-sugar">сахарозаменитель</label>
             </li>
             <li class="additionally-form__item">
               <input class="additionally-form__input visually-hidden" type="checkbox" name="water" id="water">
-              <label for="water">питьевая вода</label>
+              <label class="additionally-form--label" for="water">питьевая вода</label>
             </li>
             <li class="additionally-form__item">
               <input class="additionally-form__input visually-hidden" type="checkbox" name="milk" id="milk">
-              <label for="milk">молоко</label>
+              <label class="additionally-form--label" for="milk">молоко</label>
             </li>
             <li class="additionally-form__item">
               <input class="additionally-form__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-              <label for="vitamins">витамины</label>
+              <label class="additionally-form--label" for="vitamins">витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -111,7 +108,7 @@
       </form>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__box">
+        <div class="contacts__box contacts__box--back-grey">
           <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
@@ -150,7 +147,7 @@
             <svg class="copyright__pic">
               <path d="" />
             </svg>
-            ></a>
+          </a>
         </div>
       </footer>
     </main>
