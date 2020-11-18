@@ -32,19 +32,15 @@
         <p class="form-box__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <fieldset class="form-box__field name-form">
           <legend class="visually-hidden">Первичные данные кота</legend>
-          <ul class="name-form__list">
+          <ul class="form-box--list name-form__list">
             <li class="name-form__item">
               <label class="name-form__label" for="name">Имя:<sup>*</sup></label>
               <input class="name-form__cat-data" type="text" name="name" id="name" placeholder="Барсик">
             </li>
-          </ul>
-          <ul class="name-form__list">
             <li class="name-form__item">
               <label class="name-form__label" for="weight">Вес(кг):<sup>*</sup></label>
               <input class="name-form__cat-data" type="number" name="weight" id="weight" placeholder="7">
             </li>
-          </ul>
-          <ul class="name-form__list">
             <li class="name-form__item">
               <label class="name-form__label" for="age">Возраст(лет):</label>
               <input class="name-form__cat-data" type="number" name="age" id="age" placeholder="7">
@@ -53,7 +49,7 @@
         </fieldset>
         <fieldset class="form-box__field radio-form">
           <legend class="visually-hidden">Выбор программы</legend>
-          <ul class="radio-form__list">
+          <ul class="form-box--list radio-form__list">
             <li class="radio-form__item">
               <input class="radio-form__input visually-hidden" type="radio" name="program" id="slim" value="slim">
               <label class="radio-form__label" for="slim">Похудение</label>
@@ -70,7 +66,7 @@
         </fieldset>
         <fieldset class="form-box__field contact-form">
           <legend class="form-box__title contact-form__title">Контактные данные (владельца кота)</legend>
-          <ul class="contact-form__list">
+          <ul class="form-box--list contact-form__list">
             <li class="contact-form__item">
               <label class="contact-form__label" for="email">e-mail:*</label>
               <input class="contact-form__data" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
@@ -88,7 +84,7 @@
         </fieldset>
         <fieldset class="form-box__field additionally-form">
           <legend class="form-box__title additionally-form__title">Дополнительно</legend>
-          <ul class="additionally-form__list">
+          <ul class="form-box--list additionally-form__list">
             <li class="additionally-form__item">
               <input class="additionally-form__input visually-hidden" type="checkbox" name="not-sugar" id="not-sugar" checked>
               <label for="not-sugar">сахарозаменитель</label>
