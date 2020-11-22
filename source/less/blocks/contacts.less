@@ -3,7 +3,9 @@
   .main-fonts;
   position: relative;
   height: 450px;
-  @media (min-width:@desktop-width) {
+  margin-bottom: 50px;
+
+  @media (min-width: @desktop-width) {
     padding-top: 100px;
   }
 }
@@ -13,11 +15,13 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  @media (min-width:@tablet-width) {
+
+  @media (min-width: @tablet-width) {
     flex-basis: 171px;
     margin-left: 40px;
   }
-  @media (min-width:@tablet-width) {
+
+  @media (min-width: @tablet-width) {
     margin-left: 80px;
   }
 }
@@ -28,12 +32,14 @@
   font-size: 14px;
   line-height: 20px;
   color: @special_dark-grey;
-  @media (min-width:@tablet-width) {
+
+  @media (min-width: @tablet-width) {
     flex-basis: 171px;
     text-align: right;
     margin-right: 40px;
   }
-  @media (min-width:@tablet-width) {
+
+  @media (min-width: @tablet-width) {
     margin-right: 80px;
   }
 }
@@ -46,14 +52,16 @@
   .wrapper(92%);
   display: flex;
   justify-content: space-between;
-  @media (min-width:@tablet-width) {
+
+  @media (min-width: @tablet-width) {
     .wrapper(95%);
   }
-  @media (min-width:@desktop-width) {
+
+  @media (min-width: @desktop-width) {
     width: 580px;
     height: 201px;
     background-color: @basic-white;
-    margin:0;
+    margin: 0;
     align-items: center;
   }
 }
@@ -71,6 +79,7 @@
     top: 0;
     z-index: -1;
   }
+
   .contacts__wrapper {
     .wrapper(1220px);
   }

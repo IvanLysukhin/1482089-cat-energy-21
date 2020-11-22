@@ -10,12 +10,14 @@
 
 .main-nav__wrapper {
   .wrapper (92%);
-  @media (min-width:@tablet-width) {
+
+  @media (min-width: @tablet-width) {
     .wrapper (95%);
     display: flex;
     justify-content: space-between;
   }
-  @media (min-width:@desktop-width) {
+
+  @media (min-width: @desktop-width) {
     .wrapper (1220px);
     display: flex;
     justify-content: space-between;
@@ -27,6 +29,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  outline: 2px solid grey;
+  padding: 24px;
+
   @media (min-width: @tablet-width) {
     justify-content: flex-start;
   }
@@ -35,6 +40,7 @@
 .main-nav__button-close {
   width: 18px;
   height: 18px;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -44,6 +50,7 @@
   .reset-list;
   display: flex;
   flex-direction: column;
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: center;
@@ -52,19 +59,16 @@
     flex-grow: 1;
     justify-content: flex-end;
   }
-  @media (min-width:@desktop-width) {
+
+  @media (min-width: @desktop-width) {
     font-size: 20px;
   }
-}
-
-.main-nav__logo-box {
-  outline: 2px solid grey;
-  padding: 24px;
 }
 
 .main-nav__item {
   outline: 2px solid grey;
   padding: 24px;
+
   @media (min-width: @tablet-width) {
     padding: 0;
     margin-left: 34px;
@@ -74,7 +78,8 @@
 .main-nav__link {
   text-decoration: none;
   color: @basic-black;
-  @media (min-width:@desktop-width) {
+
+  @media (min-width: @desktop-width) {
     color: @basic-white;
   }
 }
