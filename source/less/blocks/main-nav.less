@@ -9,15 +9,14 @@
 }
 
 .main-nav__wrapper {
-  width: 92%;
-  margin: 0 auto;
+  .wrapper (92%);
   @media (min-width:@tablet-width) {
-    width: 95%;
+    .wrapper (95%);
     display: flex;
     justify-content: space-between;
   }
   @media (min-width:@desktop-width) {
-    width: 80%;
+    .wrapper (80%);
     display: flex;
     justify-content: space-between;
   }
@@ -55,7 +54,6 @@
   }
   @media (min-width:@desktop-width) {
     font-size: 20px;
-    background-color: fade(@basic-green, 85%);
   }
 }
 
