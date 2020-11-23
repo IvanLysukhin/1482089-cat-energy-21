@@ -1,4 +1,11 @@
-.comment-form--input {
+@media (min-width: @desktop-width) {
+  .comment-form {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.comment-form__input {
   .main-fonts;
   .border-grey;
   text-transform: uppercase;
@@ -7,4 +14,6 @@
   padding-bottom: 5px;
   color: @special_dark-grey;
   resize: none;
+  width: 100%;
+  height: 174px;
 }
