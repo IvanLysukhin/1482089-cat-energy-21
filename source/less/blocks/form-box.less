@@ -44,4 +44,25 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+  flex-grow: 1;
+}
+
+.form-box__button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    .wrapper (90%);
+    flex-direction: row;
+  }
+}
+
+.form-box__button {
+  width: 100%;
+  @media (min-width: @tablet-width) {
+    flex-basis: 372px;
+    margin-right: 150px;
+    flex-grow: 1;
+  }
 }
