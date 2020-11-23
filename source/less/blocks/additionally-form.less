@@ -1,6 +1,14 @@
+@media (min-width: @desktop-width) {
+  .additionally-form{
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
 .additionally-form__list {
   display: flex;
   flex-direction: column;
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -9,9 +17,14 @@
 
 .additionally-form__item {
   margin-bottom: 15px;
+
   @media (min-width: @tablet-width) {
     flex-basis: 200px;
     margin-right: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 95px;
   }
 }
 
