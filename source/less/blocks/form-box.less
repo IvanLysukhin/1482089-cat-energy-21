@@ -5,6 +5,24 @@
   line-height: 18px;
   text-transform: uppercase;
   outline: 2px solid grey;
+  .wrapper (92%);
+
+  @media (min-width: @tablet-width) {
+    .wrapper(95%);
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper(1220px);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-box__field {
+    .wrapper(90%);
+  }
+  .form-box__text {
+    .wrapper (90%);
+  }
 }
 
 .form-box--list {

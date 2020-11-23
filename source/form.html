@@ -2,18 +2,19 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav__wrapper">
+        <div class="main-nav__logo-box">
+          <a class="main-nav__link" href="#"><img class="main-nav__logo" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип Cat Energy"></a>
+          <a class="main-nav__link headline" href="#">Cat energy</a>
+          <button class="main-nav__button-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        </div>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html"><img class="main-nav__logo" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип Cat Energy"></a>
-            <a class="main-nav__link headline" href="index.html">Cat energy</a>
-            <button class="main-nav__button-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-          </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -29,7 +30,7 @@
     <main class="page-main">
       <h1 class="page-main__title">Подбор программы</h1>
       <form class="form-box" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form-box__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="form-box__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <fieldset class="form-box__field name-form">
           <legend class="visually-hidden">Первичные данные кота</legend>
           <ul class="form-box--list name-form__list">
