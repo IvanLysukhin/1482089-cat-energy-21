@@ -1,5 +1,53 @@
+@media (min-width: @tablet-width) {
+  .slider {
+    background: @darker_grey;
+  }
+}
+
+.slider__wrapper {
+  .wrapper(92%);
+
+  @media (min-width: @tablet-width) {
+    .wrapper(95%);
+  }
+}
+
 .slider__button {
   font-weight: normal;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.slider__toggle {
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  background-color: @basic-white;
+}
+
+.slider__bar {
+  width: 50%;
+  height: 6px;
+  border-radius: 6px;
+  background-color: @basic-green;
+  position: relative;
+  top: 30%;
+  margin-left: 3px;
+}
+
+.slider__toggle-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (min-width: @desktop-width) {
+  .slider {
+    background: none;
+  }
+
+  .slider__wrapper {
+    width: auto;
+    margin: 0;
+  }
 }
