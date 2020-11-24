@@ -11,9 +11,21 @@
   width: 280px;
   .wrapper(87.5%);
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .wrapper(95%);
+    background-image: url("../img/background-cat-gift-tablet.png");
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .gift__text {
   max-width: 161px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

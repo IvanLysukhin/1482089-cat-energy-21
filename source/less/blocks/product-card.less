@@ -9,11 +9,30 @@
      grid-template-columns: auto;
      text-align: center;
    }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 163px;
+    padding-top: 161px;
+    background-color: @basic_grey;
+
+    &--show-all {
+      background-color: @basic-white;
+    }
+  }
 }
 
 .product-card__pic {
   grid-row-start: 1;
   grid-row-end: 3;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: -30px;
+    left: 40%;
+  }
 }
 
 .product-card__button {

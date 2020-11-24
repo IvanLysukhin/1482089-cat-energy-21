@@ -7,4 +7,11 @@
   .wrapper (92%);
   display: flex;
   flex-direction: column;
+  @media (min-width: @tablet-width) {
+    .wrapper (95%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 90px;
+  }
 }
