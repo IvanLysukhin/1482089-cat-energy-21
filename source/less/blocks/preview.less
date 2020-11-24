@@ -9,6 +9,7 @@
   @media (min-width: @tablet-width) {
     background: none;
     text-align: left;
+    position: relative;
   }
 }
 
@@ -20,10 +21,11 @@
   row-gap: 20px;
 
   @media (min-width: @tablet-width) {
-    .wrapper (95%);
+    .wrapper (92%);
     color: @basic-black;
     align-items: flex-start;
-    height: 500px;
+    height: 820px;
+    padding-left: 14.5%;
   }
 
   @media (min-width: @desktop-width) {
@@ -39,10 +41,16 @@
 
 .preview__title {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 100%;
   font-weight: 400;
   margin-top: 28px;
   margin-bottom: -10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    margin-bottom: 7px;
+    padding-left: 5px;
+  }
 }
 
 .preview__text {
@@ -51,6 +59,12 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    margin-bottom: 47px;
+    padding-left: 5px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -65,6 +79,15 @@
 @media (min-width: @desktop-width) {
   .preview__pic {
     top: 100px;
+  }
+}
+
+.preview__pic {
+  @media (min-width: @tablet-width) {
+    width:709px;
+    height: 609px;
+    top: 231px;
+    left: 43px;
   }
 }
 
@@ -90,5 +113,10 @@
 
   @media (min-width: @tablet-width) {
     width: max-content;
+    font-size: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 }

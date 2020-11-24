@@ -12,9 +12,11 @@
   .wrapper (87.5%);
 
   @media (min-width: @tablet-width) {
-    .wrapper (95%);
+    .wrapper (92%);
     display: flex;
     justify-content: space-between;
+    padding-top: 26px;
+    padding-bottom: 28px;
   }
 
   @media (min-width: @desktop-width) {
@@ -90,6 +92,13 @@
   padding: 24px;
   padding-top: 22px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 
   @media (min-width: @desktop-width) {
     color: @basic-white;
