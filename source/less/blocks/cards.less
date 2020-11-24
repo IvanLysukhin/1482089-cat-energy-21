@@ -4,4 +4,21 @@
 
 .cards__list {
   .reset-list;
+  .wrapper (92%);
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    .wrapper (95%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper(1220px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 90px;
+  }
 }

@@ -6,6 +6,33 @@
   line-height: 20px;
   background-image: url("../img/background-cat-gift.jpg");
   background-repeat: no-repeat;
+  background-position: 50%;
   height: 289px;
   width: 280px;
+  .wrapper(87.5%);
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .wrapper(95%);
+    background-image: url("../img/background-cat-gift-tablet.png");
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/background-cat-gift.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    flex-direction: column;
+  }
+}
+
+.gift__text {
+  max-width: 161px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
