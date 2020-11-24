@@ -4,6 +4,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, auto);
+   &--show-all {
+     grid-template-rows: repeat(3, auto);
+     grid-template-columns: auto;
+     text-align: center;
+   }
 }
 
 .product-card__pic {
@@ -31,7 +36,7 @@
   font-size: 12px;
   line-height: 16px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 }
 
 .product-card__name {

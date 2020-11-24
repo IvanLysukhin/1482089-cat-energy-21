@@ -1,3 +1,7 @@
+.additional-cards {
+  .wrapper(92%);
+}
+
 .additional-cards__title {
   font-weight: normal;
   font-size: 24px;
@@ -9,12 +13,20 @@
   .reset-list;
 }
 
+.additional-cards__item {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto auto auto;
+}
+
 .additional-cards__name {
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: @special_dark-grey-2;
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
 .additional-cards__text {
@@ -23,4 +35,14 @@
   font-size: 14px;
   line-height: 14px;
   color: @special_dark-grey-2;
+  text-align: left;
+
+  &--right {
+    text-align: right;
+  }
+}
+
+.additional-cards__button {
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
