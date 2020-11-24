@@ -4,11 +4,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, auto);
-   &--show-all {
-     grid-template-rows: repeat(3, auto);
-     grid-template-columns: auto;
-     text-align: center;
-   }
+
+  &--show-all {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto;
+    text-align: center;
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -28,6 +29,7 @@
 .product-card__pic {
   grid-row-start: 1;
   grid-row-end: 3;
+
   @media (min-width: @tablet-width) {
     position: absolute;
     top: -30px;
@@ -61,6 +63,7 @@
 .product-card__name {
   text-align: left;
 }
+
 .product-card__number {
   text-align: right;
 }
