@@ -1,3 +1,18 @@
+.name-form {
+  position: relative;
+  @media (max-width: @mobile-width-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 1px;
+      background-color: @border-dark-grey;
+      left: -26px;
+      bottom: -8px
+    }
+  }
+}
+
 .name-form__list {
   .main-fonts;
   color: @special_dark-grey;
@@ -6,15 +21,16 @@
 }
 
 .name-form__item {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   display: flex;
+  align-items: baseline;
 }
 
 .name-form__cat-data {
   text-transform: uppercase;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 16px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   .border-grey;
   flex-grow: 1;
   margin-left: 17px;

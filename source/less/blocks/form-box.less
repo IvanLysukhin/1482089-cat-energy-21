@@ -4,7 +4,7 @@
   font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
-  .wrapper (92%);
+  .wrapper (87.5%);
 
   @media (min-width: @tablet-width) {
     .wrapper(95%);
@@ -21,6 +21,9 @@
 
 .form-box__field {
   border: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
@@ -58,21 +61,17 @@
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
+  position: relative;
+  padding: 0;
 }
 
-.form-box__text--necessarily {
-  .second-fonts;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: none;
-  flex-grow: 1;
-}
+
 
 .form-box__button-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: -10px;
 
   @media (min-width: @tablet-width) {
     .wrapper (90%);
@@ -88,6 +87,8 @@
 
 .form-box__button {
   width: 100%;
+  padding: 8px;
+  font-size: 16px;
 
   @media (min-width: @tablet-width) {
     flex-basis: 372px;
@@ -100,7 +101,19 @@
   }
 }
 
-
 .form-box__text {
   display: block;
+  margin-top: 28px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.form-box__text--necessarily {
+  .second-fonts;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  flex-grow: 1;
+  margin-top: 18px;
 }
