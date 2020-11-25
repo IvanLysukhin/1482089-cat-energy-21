@@ -5,31 +5,34 @@
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
-  outline: 2px solid red;
 
   @media (min-width: @tablet-width) {
     background: none;
     text-align: left;
+    position: relative;
   }
 }
 
 .preview__wrapper {
-  .wrapper (92%);
+  .wrapper (87.5%);
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
 
   @media (min-width: @tablet-width) {
-    .wrapper (95%);
+    .wrapper (92%);
     color: @basic-black;
     align-items: flex-start;
-    height: 500px;
+    height: 820px;
+    padding-left: 14.5%;
   }
 
   @media (min-width: @desktop-width) {
     .wrapper (1220px);
     position: relative;
+    padding-left: 159px;
+    height: 614px;
   }
 }
 
@@ -40,8 +43,22 @@
 
 .preview__title {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 100%;
   font-weight: 400;
+  margin-top: 28px;
+  margin-bottom: -10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    margin-bottom: 7px;
+    padding-left: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 79px;
+    margin-bottom: 4px;
+    padding-left: 0;
+  }
 }
 
 .preview__text {
@@ -49,41 +66,71 @@
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
-}
+  margin-bottom: 7px;
 
-@media (min-width: @tablet-width) {
-  .preview__pic {
-    position: absolute;
-    top: 284px;
-    z-index: -1;
-    left: 35%;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    margin-bottom: 47px;
+    padding-left: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 49px;
+    padding-left: 0;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .preview__pic {
-    top: 100px;
+.preview__pic {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    top: 230px;
+    left: 5%;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 499px;
+    top: -10px;
+    left: 525px;
   }
 }
 
 .preview__cat-pic {
-  @media (max-width: @desktop-width) {
-    display: none;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    top: -143px;
+    right: -30px;
+    z-index: -2;
   }
-  position: absolute;
-  top: -17%;
-  right: 0;
-  z-index: -2;
 }
 
 .preview__link {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
-  color: @basic-white;
   width: 100%;
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-top: -15px;
 
   @media (min-width: @tablet-width) {
     width: max-content;
+    font-size: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 27px;
+    padding-right: 27px;
   }
 }

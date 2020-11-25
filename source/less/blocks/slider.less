@@ -1,14 +1,19 @@
 @media (min-width: @tablet-width) {
   .slider {
     background: @darker_grey;
+    margin-top: 230px;
   }
 }
 
 .slider__wrapper {
-  .wrapper(92%);
+  .wrapper(87.5%);
+  position: relative;
+  padding-top: 289px;
+  padding-bottom: 36px;
 
   @media (min-width: @tablet-width) {
-    .wrapper(95%);
+    .wrapper(92%);
+    padding-bottom: 71px;
   }
 }
 
@@ -16,34 +21,116 @@
   font-weight: normal;
   font-size: 16px;
   text-transform: uppercase;
+  background: transparent;
+  border: none;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  &--before {
+    @media (min-width: @desktop-width) {
+      margin-right: 0;
+    }
+  }
 }
 
 .slider__toggle {
-  width: 84px;
+  width: 38%;
   height: 14px;
   border-radius: 6px;
   background-color: @basic-white;
+  border: 1px solid @toggle-border-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 66%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: @toggle-border-grey;
+    border: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 46%;
+      background-color: @basic-green;
+      width: 8px;
+      height: 8px;
+      border: 13px solid @basic-white;
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 428px;
+    margin-left: 0;
+  }
 }
 
 .slider__bar {
-  width: 50%;
+  width: 44%;
   height: 6px;
   border-radius: 6px;
   background-color: @basic-green;
   position: relative;
   top: 30%;
-  margin-left: 3px;
+  left: 7%;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .slider__toggle-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 2px;
+  padding-right: 27px;
+  padding-left: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 21px;
+    padding-right: 0;
+    padding-left: 32px;
+  }
+}
+
+.slider__pic {
+  position: absolute;
+
+  &--before {
+    top: 21px;
+    left: -15px;
+
+    @media (min-width: @tablet-width) {
+      height: 500px;
+      top: -175px;
+      left: 30%;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -245px;
+      left: 100px;
+    }
+  }
+
+  &--after {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .slider {
     background: none;
+    margin: 0;
   }
 
   .slider__wrapper {

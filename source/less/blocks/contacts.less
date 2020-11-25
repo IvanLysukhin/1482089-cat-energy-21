@@ -1,28 +1,31 @@
 .contacts {
-  outline: 2px solid grey;
   .main-fonts;
   position: relative;
   height: 450px;
   margin-bottom: 50px;
 
+  @media (min-width: @tablet-width) {
+    height: 550px;
+  }
+
   @media (min-width: @desktop-width) {
     padding-top: 100px;
+    height: 252px;
   }
 }
 
 .contacts__text {
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 21px;
   text-transform: uppercase;
+  margin-right: 18px;
 
   @media (min-width: @tablet-width) {
     flex-basis: 171px;
     margin-left: 40px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-left: 80px;
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
@@ -32,15 +35,29 @@
   font-size: 14px;
   line-height: 20px;
   color: @special_dark-grey;
+  display: block;
+  padding-top: 5px;
 
   @media (min-width: @tablet-width) {
     flex-basis: 171px;
     text-align: right;
-    margin-right: 40px;
+    margin-right: 65px;
+    margin-top: 10px;
+    font-size: 16px;
   }
 
-  @media (min-width: @tablet-width) {
-    margin-right: 80px;
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    text-align: left;
+    margin-top: 14px;
+    margin-right: 38px;
+  }
+}
+
+.contacts__shift {
+  @media (min-width: @desktop-width) {
+    margin-top: 15px;
+    display: block;
   }
 }
 
@@ -49,26 +66,38 @@
 }
 
 .contacts__box {
-  .wrapper(92%);
+  .wrapper(87.5%);
   display: flex;
   justify-content: space-between;
+  padding-top: 11px;
+  padding-bottom: 9px;
 
   @media (min-width: @tablet-width) {
     .wrapper(95%);
+    padding-top: 45px;
+    padding-left: 23px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 580px;
+    width: 500px;
     height: 201px;
     background-color: @basic-white;
     margin: 0;
+    padding: 0;
+    padding-left: 35px;
+    padding-right: 35px;
     align-items: center;
   }
 }
 
 .contacts__map {
   width: 100%;
-  height: 400px;
+  height: 362px;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }
 
 @media (min-width: @desktop-width) {
