@@ -1,5 +1,10 @@
-@media (min-width: @desktop-width) {
   .contact-form {
+    @media (min-width: @tablet-width) {
+      margin-top: 38px;
+      margin-bottom: 42px;
+    }
+
+      @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: -1;
   }
@@ -8,8 +13,12 @@
 .contact-form__list {
   display: flex;
   flex-direction: column;
-  margin-top: 32px;
-  margin-bottom: 9px;
+  margin-top: 33px;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 82px;
+  }
 }
 
 .contact-form__label {
@@ -17,17 +26,37 @@
 }
 
 .contact-form__item {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   display: flex;
   align-items: baseline;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 18px;
+  }
 }
 
 .contact-form__data {
   text-transform: uppercase;
-  padding-left: 9px;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  padding-left: 14px;
+  padding-top: 9px;
+  padding-bottom: 11px;
   .border-grey;
   flex-grow: 1;
   margin-left: 11px;
+  font-size: 16px;
+  .main-fonts;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding-left: 23px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+    margin-left: 19px;
+  }
+
+  &--width {
+    @media (min-width: @tablet-width) {
+      padding-left: 15px;
+    }
+  }
 }

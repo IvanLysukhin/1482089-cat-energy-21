@@ -7,7 +7,9 @@
   .wrapper (87.5%);
 
   @media (min-width: @tablet-width) {
-    .wrapper(95%);
+    .wrapper(92%);
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,15 +26,9 @@
   padding: 0;
   margin: 0;
   position: relative;
-}
 
-@media (min-width: @tablet-width) {
-  .form-box__field {
-    .wrapper(90%);
-  }
-
-  .form-box__text {
-    .wrapper (90%);
+  @media (min-width: @tablet-width) {
+    .wrapper(89%);
   }
 }
 
@@ -63,6 +59,10 @@
   text-transform: none;
   position: relative;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+  }
 }
 
 
@@ -106,6 +106,13 @@
   margin-top: 28px;
   font-size: 14px;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    .wrapper (89%);
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 38px;
+  }
 }
 
 .form-box__text--necessarily {
