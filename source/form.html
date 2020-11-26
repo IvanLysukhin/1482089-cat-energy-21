@@ -7,26 +7,26 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <nav class="main-nav main-nav__wrapper">
-        <div class="main-nav__logo-box">
-          <a class="main-nav__link" href="#"><img class="main-nav__logo" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Логотип Cat Energy"></a>
-          <a class="main-nav__link headline" href="#">Cat energy</a>
-          <button class="main-nav__button-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-        </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--black" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--black" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--black" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <header class="page-header">
+    <nav class="main-nav main-nav__wrapper">
+      <div class="main-nav__logo-box">
+        <a class="main-nav__logo-link" href="index.html"><img class="main-nav__logo" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy"></a>
+        <a class="main-nav__link headline" href="index.html"><img class="main-nav__logo-word" src="img/cat-energy-logo.svg" width="101" height="18" alt="Логотип Cat Energy"></a>
+        <button class="main-nav__button main-nav__button--closed" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+      </div>
+      <ul class="main-nav__list main-nav__list--closed">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--black" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--black" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--black" href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
     <main class="page-main">
       <h1 class="page-main__title">Подбор программы</h1>
       <form class="form-box" action="https://echo.htmlacademy.ru" method="post">
@@ -52,7 +52,7 @@
           <legend class="visually-hidden">Выбор программы</legend>
           <ul class="form-box__list radio-form__list">
             <li class="radio-form__item">
-              <input class="radio-form__input visually-hidden" type="radio" name="program" id="slim" value="slim">
+              <input class="radio-form__input visually-hidden" type="radio" name="program" id="slim" value="slim" checked>
               <label class="radio-form__label" for="slim">Похудение</label>
             </li>
             <li class="radio-form__item">
@@ -73,8 +73,8 @@
               <input class="contact-form__data" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
             </li>
             <li class="contact-form__item">
-              <label class="contact-form__label" for="phone">телефон:*</label>
-              <input class="contact-form__data" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+              <label class="contact-form__label contact-form__label--width" for="phone">телефон:*</label>
+              <input class="contact-form__data contact-form__data--width" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
             </li>
           </ul>
         </fieldset>
@@ -109,18 +109,18 @@
           <p class="form-box__text form-box__text--necessarily"><sup>*</sup> — Обязательные поля</p>
         </div>
       </form>
-      <section class="contacts">
+      <section class="contacts contacts--back-grey">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <div class="contacts__box">
-            <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <p class="contacts__text">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__shift">Санкт-Петербург</span></p>
           </div>
         </div>
         <img class="contacts__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </section>
       <footer class="page-footer">
-        <div class="page-footer__title"><a class="page-footer__link headline" href="index.html">Cat energy</a></div>
+        <div class="page-footer__title"><a class="page-footer__link headline" href="#">Cat energy</a></div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

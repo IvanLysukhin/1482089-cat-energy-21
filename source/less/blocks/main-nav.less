@@ -23,6 +23,7 @@
     .wrapper (1220px);
     display: flex;
     justify-content: space-between;
+    padding-bottom: 29px;
   }
 }
 
@@ -48,13 +49,60 @@
   }
 }
 
-.main-nav__button-close {
+.main-nav__button {
   width: 18px;
   height: 18px;
+  background: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+
+  &--opened::after,
+  &--opened::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: @basic-black;
+    top: 7px;
+    left: -6px;
+  }
+
+  &--opened::after {
+    transform: rotate(-45deg);
+  }
+
+  &--opened::before {
+    transform: rotate(45deg);
+  }
+
+  &--closed::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: @basic-black;
+    top: 7px;
+    left: -6px;
+    box-shadow: 0 9px 0 0 @basic-black, 0 -9px 0 0 @basic-black;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+// Стили для меню без JS
+.main-nav__button.main-nav__button--no-js {
+  display: none;
+}
+
+.main-nav__logo-box.main-nav__logo-box--no-js {
+  justify-content: center;
+}
+
+.main-nav__list.main-nav__list--no-js {
+  display: flex;
 }
 
 .main-nav__list {
@@ -73,6 +121,16 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 30px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    &--closed {
+      display: none;
+    }
+
+    &--open {
+      display: flex;
+    }
   }
 }
 

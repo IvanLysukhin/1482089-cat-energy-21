@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 .overlay (@color, @fade-percent) {
   background-color: fade(@color, @fade-percent);
 }
@@ -14,4 +15,29 @@
 .wrapper (@width-percent) {
   width: @width-percent;
   margin: 0 auto;
+}
+
+
+.left-title-green-line(@position-x; @position-y) {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: @basic-green;
+    left: @position-x;
+    top: @position-y;
+  }
+}
+
+.right-title-green-line(@position-x; @position-y) {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: @basic-green;
+    right: @position-x;
+    top: @position-y;
+  }
 }

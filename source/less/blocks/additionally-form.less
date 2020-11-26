@@ -1,5 +1,13 @@
-@media (min-width: @desktop-width) {
-  .additionally-form {
+.additionally-form {
+  .right-title-green-line(-164px; -11px);
+
+  @media (min-width: @tablet-width) {
+    .left-title-green-line(-106%; -8px);
+    .right-title-green-line(-252px; -8px);
+  }
+
+  @media (min-width: @desktop-width) {
+    .left-title-green-line(-103%; -8px);
     grid-column-start: 1;
     grid-column-end: -1;
   }
@@ -8,23 +16,33 @@
 .additionally-form__list {
   display: flex;
   flex-direction: column;
+  margin-top: 33px;
+  margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 105px;
+    margin-bottom: 33px;
   }
 }
 
 .additionally-form__item {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
-    flex-basis: 200px;
-    margin-right: 100px;
-  }
+    flex-basis: 220px;
+    margin-bottom: 31px;
 
-  @media (min-width: @desktop-width) {
-    margin-right: 95px;
+    &:nth-of-type(2n) {
+      @media (max-width: @tablet-width-only) {
+        margin-left: 124px;
+      }
+    }
   }
 }
 
@@ -33,4 +51,42 @@
   padding-left: 46px;
   padding-top: 5px;
   padding-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: transparent;
+    width: 29px;
+    height: 29px;
+    border: 1px solid @toggle-border-grey;
+    top: 1px;
+    left: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 39px;
+      height: 39px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 59px;
+  }
+}
+
+.additionally-form__input:checked + .additionally-form__label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  left: 6px;
+
+  @media (min-width: @tablet-width) {
+    top: 13px;
+    left: 12px;
+  }
 }
