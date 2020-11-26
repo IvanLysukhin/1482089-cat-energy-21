@@ -1,5 +1,11 @@
-@media (min-width: @desktop-width) {
-  .additionally-form {
+.additionally-form {
+  .right-title-green-line(-164px; -11px);
+  @media (min-width: @tablet-width) {
+    .left-title-green-line(-106%; -8px);
+    .right-title-green-line(-252px; -8px);
+  }
+  @media (min-width: @desktop-width) {
+    .left-title-green-line(-103%; -8px);
     grid-column-start: 1;
     grid-column-end: -1;
   }
@@ -16,6 +22,11 @@
     flex-wrap: wrap;
     margin-top: 62px;
   }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 105px;
+    margin-bottom: 33px;
+  }
 }
 
 .additionally-form__item {
@@ -26,12 +37,10 @@
     margin-bottom: 31px;
 
     &:nth-of-type(2n) {
-      margin-left: 124px;
+      @media (max-width: @tablet-width-only) {
+        margin-left: 124px;
+      }
     }
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 95px;
   }
 }
 
