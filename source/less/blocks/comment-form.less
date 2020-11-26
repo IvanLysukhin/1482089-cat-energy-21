@@ -1,3 +1,9 @@
+.comment-form {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .comment-form {
     grid-column-start: 1;
@@ -18,4 +24,13 @@
   height: 135px;
   margin-top: 33px;
   margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 82px;
+    padding-left: 19px;
+    padding-right: 20px;
+    height: 158px;
+  }
 }
