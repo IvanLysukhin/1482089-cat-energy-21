@@ -1,5 +1,5 @@
 .additional-cards {
-  .wrapper(92%);
+  .wrapper(87.5%);
 
   @media (min-width: @tablet-width) {
     .wrapper(95%);
@@ -26,6 +26,8 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-auto-rows: auto auto auto;
+  padding-top: 9px;
+  margin-bottom: 5px;
 
   @media (min-width: @tablet-width) {
     grid-auto-rows: auto auto;
@@ -48,6 +50,7 @@
   color: @special_dark-grey-2;
   grid-column-start: 1;
   grid-column-end: -1;
+  margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
@@ -71,6 +74,9 @@
 .additional-cards__button {
   grid-column-start: 1;
   grid-column-end: -1;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  font-size: 16px;
 
   @media (min-width: @desktop-width) {
     grid-column-start: 4;
