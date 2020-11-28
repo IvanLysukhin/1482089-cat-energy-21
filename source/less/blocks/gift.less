@@ -30,6 +30,11 @@
     background-repeat: no-repeat;
     background-position: 50%;
     flex-direction: column;
+    margin: auto;
+    margin-top: 138px;
+    margin-right: 0;
+    width: 80%;
+    justify-content: space-around;
   }
 }
 
@@ -42,6 +47,11 @@
     margin-left: -50px;
     margin-right: 22px;
   }
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: -40px;
+  }
 }
 
 .gift__text {
@@ -52,5 +62,9 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
   }
 }
