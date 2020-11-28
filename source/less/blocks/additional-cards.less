@@ -22,6 +22,7 @@
     font-size: 36px;
     padding-left: 36px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 0;
   }
@@ -29,6 +30,7 @@
 
 .additional-cards__list {
   .reset-list;
+
   @media (min-width: @tablet-width) {
     margin-top: 86px;
   }
@@ -102,7 +104,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
-    margin-top: 22px
+    margin-top: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -112,9 +114,10 @@
   &--right {
     text-align: right;
 
-    @media (min-width: @desktop-width) {}
-    width: auto;
-    text-align: left;
+    @media (min-width: @desktop-width) {
+      width: auto;
+      text-align: left;
+    }
   }
 }
 
