@@ -1,20 +1,28 @@
 .cards__list {
   .reset-list;
-  .wrapper (92%);
+  .wrapper (87.5%);
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
 
   @media (min-width: @tablet-width) {
-    .wrapper (95%);
+    .wrapper (92%);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    margin-top: 90px;
+    margin-top: 149px;
+    column-gap: 60px;
+    row-gap: 123px;
   }
 
   @media (min-width: @desktop-width) {
     .wrapper(1220px);
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 90px;
+    margin-top: 154px;
+    column-gap: 80px;
+    row-gap: 126px;
   }
+}
+
+.cards__item {
+  margin-bottom: 17px;
 }

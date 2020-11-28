@@ -16,10 +16,12 @@
   margin: 0;
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/big-background-cat-green.jpg");
-    background-repeat: no-repeat;
-    background-size: 51%;
-    background-position: top 0 right 14px;
+    &--background {
+      background-image: url("../img/big-background-cat-green.jpg");
+      background-repeat: no-repeat;
+      background-size: 51%;
+      background-position: top 0 right 14px;
+    }
   }
 }
 
@@ -52,5 +54,6 @@
 
   @media (min-width: @desktop-width) {
     .wrapper(1220px);
+    padding-top: 27px;
   }
 }

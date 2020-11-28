@@ -3,11 +3,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, auto);
+  padding-top: 12px;
 
   &--show-all {
     grid-template-rows: repeat(3, auto);
     grid-template-columns: auto;
     text-align: center;
+    padding-top: 70px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: @tablet-width) {
@@ -17,17 +20,31 @@
     position: relative;
     height: 163px;
     padding-top: 161px;
+    padding-bottom: 106px;
+    padding-left: 38px;
+    padding-right: 38px;
     background-color: @basic_grey;
 
     &--show-all {
       background-color: @basic-white;
+      border: 2px solid @basic_grey;
+      padding-bottom: 104px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }
 
 .product-card__pic {
   grid-row-start: 1;
   grid-row-end: 3;
+  position: relative;
+  top: 30px;
+  left: 35px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -39,6 +56,51 @@
 .product-card__button {
   grid-column-start: 1;
   grid-column-end: -1;
+  margin-top: 21px;
+  font-size: 16px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  cursor: pointer;
+
+  &--show-all {
+    background-color: @basic_grey;
+    color: @special_dark-grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 7px;
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      margin-top: 70px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: @special_dark-grey-3;
+      top: -103px;
+      left: 124px;
+
+      @media (min-width: @tablet-width) {
+        width: 59px;
+        top: -268px;
+        left: 93px;
+      }
+
+      @media (min-width: @desktop-width) {
+        left: 53px;
+      }
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .product-card__title {
@@ -47,6 +109,28 @@
   font-size: 16px;
   line-height: 20px;
   color: @special_dark-grey-2;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 52px;
+    padding-right: 52px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 4px;
+  }
+}
+
+.product-card__shift {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .product-card__list {
@@ -55,8 +139,31 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.product-card__item {
   display: grid;
   grid-template-columns: auto auto;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid @toggle-border-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: -2px;
+  }
 }
 
 .product-card__name {
@@ -73,18 +180,39 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-}
 
-.product-card__text--big {
-  .main-fonts;
-  color: @light-black;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-}
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 23px;
+  }
 
-.product-card__button--show-all {
-  background-color: @basic_grey;
-  color: @special_dark-grey;
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+
+  &--big {
+    .main-fonts;
+    color: @light-black;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: -2px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 22px;
+      padding-left: 33px;
+      padding-right: 33px;
+      margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+  }
 }
