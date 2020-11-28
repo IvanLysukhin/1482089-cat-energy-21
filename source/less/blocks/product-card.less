@@ -20,10 +20,15 @@
     position: relative;
     height: 163px;
     padding-top: 161px;
+    padding-bottom: 106px;
+    padding-left: 38px;
+    padding-right: 38px;
     background-color: @basic_grey;
 
     &--show-all {
       background-color: @basic-white;
+      border: 2px solid @basic_grey;
+      padding-bottom: 104px;
     }
   }
 }
@@ -59,6 +64,12 @@
     margin-top: 7px;
     position: relative;
 
+    @media (min-width: @tablet-width) {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      margin-top: 70px;
+    }
+
     &::before,
     &::after {
       content: "";
@@ -68,6 +79,12 @@
       background-color: @special_dark-grey-3;
       top: -103px;
       left: 124px;
+
+      @media (min-width: @tablet-width) {
+        width: 59px;
+        top: -268px;
+        left: 93px;
+      }
     }
     &::after {
       transform: rotate(90deg);
@@ -81,6 +98,21 @@
   font-size: 16px;
   line-height: 20px;
   color: @special_dark-grey-2;
+
+  @media (min-width: @tablet-width){
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 52px;
+    padding-right: 52px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.product-card__shift {
+  @media (min-width: @tablet-width){
+    display: none;
+  }
 }
 
 .product-card__list {
@@ -89,8 +121,23 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width){
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+}
+
+.product-card__item {
   display: grid;
   grid-template-columns: auto auto;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid @toggle-border-grey;
+  }
 }
 
 .product-card__name {
@@ -108,6 +155,13 @@
   font-size: 12px;
   line-height: 16px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 23px;
+  }
   &--big {
     .main-fonts;
     color: @light-black;
@@ -116,5 +170,13 @@
     font-size: 16px;
     line-height: 20px;
     margin-bottom: -2px;
+
+    @media (min-width: @tablet-width){
+      font-size: 20px;
+      line-height: 22px;
+      padding-left: 33px;
+      padding-right: 33px;
+      margin: 0;
+    }
   }
 }
