@@ -49,6 +49,107 @@
   margin-bottom: -2px;
   padding-left: 80px;
   text-align: left;
+  position: relative;
+
+  &--leaf,
+  &--tub,
+  &--eat,
+  &--alarm {
+    &::before {
+      content: "";
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      top: 13px;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-color: @basic-green;
+
+      @media (min-width: @tablet-width) {
+        height: 80px;
+        width: 80px;
+        top: 55px
+      }
+    }
+  }
+
+  &--leaf {
+    &::before {
+      background-image: url("../img/icon-leaf.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      &::after {
+        content: "1";
+        position: absolute;
+        .main-fonts;
+        font-size: 280px;
+        color: @basic_grey;
+        z-index: -1;
+        top: 144px;
+        left: 117px;
+      }
+    }
+  }
+
+  &--tub {
+    &::before {
+      background-image: url("../img/icon-tub.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      &::after {
+        content: "2";
+        position: absolute;
+        .main-fonts;
+        font-size: 280px;
+        color: @basic_grey;
+        z-index: -1;
+        top: 144px;
+        left: 117px;
+      }
+    }
+  }
+
+  &--eat {
+    &::before {
+      background-image: url("../img/icon-eat.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      &::after {
+        content: "3";
+        position: absolute;
+        .main-fonts;
+        font-size: 280px;
+        color: @basic_grey;
+        z-index: -1;
+        top: 144px;
+        left: 117px;
+      }
+    }
+  }
+
+  &--alarm {
+    &::before {
+      background-image: url("../img/icon-alarm.svg");
+    }
+
+    @media (min-width: @tablet-width) {
+      &::after {
+        content: "4";
+        position: absolute;
+        .main-fonts;
+        font-size: 280px;
+        color: @basic_grey;
+        z-index: -1;
+        top: 144px;
+        left: 117px;
+      }
+    }
+  }
+
 
   @media (min-width: @tablet-width) {
     padding-left: 0;

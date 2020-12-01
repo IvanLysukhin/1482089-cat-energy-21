@@ -6,6 +6,10 @@
   background-size: 100%;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-cat-green@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     background: none;
     text-align: left;
@@ -70,12 +74,12 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    margin-bottom: 47px;
+    margin-bottom: 27px;
     padding-left: 5px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 49px;
+    margin-bottom: 30px;
     padding-left: 0;
   }
 }
@@ -86,14 +90,14 @@
     width: 709px;
     height: 609px;
     top: 230px;
-    left: 5%;
+    left: 4%;
     z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
     width: 552px;
     height: 499px;
-    top: -10px;
+    top: 0;
     left: 525px;
   }
 }
