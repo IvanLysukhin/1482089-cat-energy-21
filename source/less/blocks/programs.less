@@ -147,6 +147,18 @@
   line-height: 16px;
   text-transform: uppercase;
   padding-right: 45px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    top: 8px;
+    right: -6px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
