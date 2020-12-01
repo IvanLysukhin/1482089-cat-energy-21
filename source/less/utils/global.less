@@ -17,10 +17,14 @@
 
   @media (min-width: @desktop-width) {
     &--background {
-      background-image: url("../img/big-background-cat-green.jpg");
+      background-image: url("../img/background-cat-green-desktop.jpg");
       background-repeat: no-repeat;
-      background-size: 51%;
       background-position: top 0 right 14px;
+      background-size: auto 694px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background-cat-green-desktop@2x.jpg");
+      }
     }
   }
 }

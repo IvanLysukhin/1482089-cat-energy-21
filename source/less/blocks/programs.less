@@ -49,6 +49,66 @@
   text-transform: uppercase;
   padding-left: 71px;
   margin-bottom: 28px;
+  position: relative;
+
+  &--slim {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/cat-slim.svg");
+      background-repeat: no-repeat;
+      top: -9px;
+      left: 2px;
+      height: 53px;
+      width: 50px;
+
+      @media (min-width: @tablet-width) {
+        width: 200px;
+        height: 211px;
+        background-size: 200px 211px;
+        top: 3px;
+        left: 102%;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 100px;
+        height: 106px;
+        background-size: 100px 106px;
+        top: -38px;
+        left: 0;
+      }
+    }
+  }
+
+  &--pro {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/cat-pro.svg");
+      background-repeat: no-repeat;
+      top: -6px;
+      left: -7px;
+      height: 50px;
+      width: 67px;
+
+
+      @media (min-width: @tablet-width) {
+        width: 268px;
+        height: 200px;
+        background-size: 268px 200px;
+        top: 14px;
+        left: 93%;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 134px;
+        height: 100px;
+        background-size: 134px 100px;
+        top: -32px;
+        left: -21px;
+      }
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
