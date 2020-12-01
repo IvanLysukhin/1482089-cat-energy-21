@@ -1,23 +1,17 @@
 .radio-form {
   @media (max-width: @mobile-width-only) {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 200%;
-      height: 1px;
-      background-color: @border-dark-grey;
-      left: -26px;
-      bottom: 25px;
-    }
+    width: 100%;
+    border-bottom: 1px solid @border-special-grey;
   }
 }
 
 .radio-form__list {
+  .wrapper (87.5%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 23px;
-  margin-bottom: 39px;
+  margin-top: 17px;
+  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     margin-top: 55px;
