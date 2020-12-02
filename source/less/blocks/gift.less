@@ -4,7 +4,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  background-image: url("../img/background-cat-gift.jpg");
+  background-image: url("../img/background-cat-gift-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
   height: 289px;
@@ -12,21 +12,30 @@
   .wrapper(87.5%);
   text-align: center;
   vertical-align: bottom;
-  margin-top: 57px;
-  margin-bottom: 34px;
+  margin-top: 37px;
+  margin-bottom: 33px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-cat-gift-mobile@2x.png");
+    background-size: 100%;
+  }
 
   @media (min-width: @tablet-width) {
     .wrapper(92%);
-    background-image: url("../img/background-cat-gift-tablet.png");
+    background-image: url("../img/background-cat-gift-tablet.jpg");
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 21px;
     margin-bottom: 31px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-cat-gift-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/background-cat-gift.jpg");
+    background-image: url("../img/background-cat-gift-desktop.jpg");
     background-repeat: no-repeat;
     background-position: 50%;
     flex-direction: column;
@@ -35,6 +44,10 @@
     margin-right: 0;
     width: 80%;
     justify-content: space-around;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-cat-gift-desktop@2x.png");
+    }
   }
 }
 
