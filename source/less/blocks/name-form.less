@@ -2,15 +2,10 @@
   position: relative;
 
   @media (max-width: @mobile-width-only) {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 200%;
-      height: 1px;
-      background-color: @border-dark-grey;
-      left: -26px;
-      bottom: -8px;
-    }
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid @border-special-grey;
+    padding-bottom: 7px;
   }
 }
 
@@ -19,9 +14,11 @@
   color: @special_dark-grey;
   display: flex;
   flex-direction: column;
+  .wrapper (87.5%);
 
   @media (min-width: @tablet-width) {
     margin-top: 67px;
+    width: 100%;
   }
 }
 
