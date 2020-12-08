@@ -36,8 +36,8 @@ const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.mozjpeg({progressive: true}),
-        imagemin.optipng({optimizationLevel: 3}),
-        imagemin.svgo()
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
 }
@@ -58,10 +58,10 @@ exports.createWebp = createWebp;
 // SVG Sprite
 
 const sprite = () => {
- return gulp.src("source/img/icons/*.svg")
-   .pipe(svgstore())
-   .pipe(rename("svg-sprite.svg"))
-   .pipe(gulp.dest("build/img"))
+  return gulp.src("source/img/icons/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("svg-sprite.svg"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.sprite = sprite;
@@ -73,9 +73,9 @@ const copy = () => {
     "source/fonts/*.{woff2,woff}",
     "source/img/**/*.{jpg,png,svg}",
     "source/*.html"
-  ],{
+  ], {
     base: "source"
-    })
+  })
     .pipe(gulp.dest("build"))
 }
 
@@ -84,7 +84,7 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
- return del("build")
+  return del("build")
 }
 
 exports.clean = clean;
@@ -118,9 +118,9 @@ exports.default = gulp.series(
 
 // Build
 
-const build = gulp.series (
+const build = gulp.series(
   clean,
-  gulp.parallel (
+  gulp.parallel(
     styles,
     copy,
     images,
