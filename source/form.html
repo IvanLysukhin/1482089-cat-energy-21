@@ -33,7 +33,7 @@
           <a class="main-nav__link main-nav__link--black" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--black" href="#">Подбор программы</a>
+          <a class="main-nav__link main-nav__link--black main-nav__link--green-bottom" href="#">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -71,7 +71,7 @@
               <label class="radio-form__label" for="muscles">Набор массы</label>
             </li>
             <li class="radio-form__item">
-              <input class="radio-form__input visually-hidden" type="radio" name="program" id="advice" value="advice">
+              <input class="radio-form__input visually-hidden" type="radio" name="program" id="advice" value="advice" disabled>
               <label class="radio-form__label" for="advice">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -81,11 +81,11 @@
           <ul class="form-box__list contact-form__list">
             <li class="contact-form__item">
               <label class="contact-form__label" for="email">e-mail:*</label>
-              <input class="contact-form__data contact-form__data--mail" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+              <input class="contact-form__data contact-form__data--mail" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" disabled>
             </li>
             <li class="contact-form__item">
               <label class="contact-form__label contact-form__label--width" for="phone">телефон:*</label>
-              <input class="contact-form__data contact-form__data--width contact-form__data--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+              <input class="contact-form__data contact-form__data--width contact-form__data--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </fieldset>
@@ -106,11 +106,11 @@
               <label class="additionally-form__label" for="water">питьевая вода</label>
             </li>
             <li class="additionally-form__item">
-              <input class="additionally-form__input visually-hidden" type="checkbox" name="milk" id="milk">
+              <input class="additionally-form__input visually-hidden" type="checkbox" name="milk" id="milk" >
               <label class="additionally-form__label" for="milk">молоко</label>
             </li>
             <li class="additionally-form__item">
-              <input class="additionally-form__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+              <input class="additionally-form__input visually-hidden" type="checkbox" name="vitamins" id="vitamins" disabled>
               <label class="additionally-form__label" for="vitamins">витамины</label>
             </li>
           </ul>

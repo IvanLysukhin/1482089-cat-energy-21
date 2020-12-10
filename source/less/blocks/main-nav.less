@@ -40,6 +40,14 @@
   @media (min-width: @desktop-width) {
     margin-top: 30px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-nav__logo {
@@ -169,23 +177,63 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    padding: 0;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding: 11px 0;
   }
 
   @media (min-width: @desktop-width) {
     color: @basic-white;
     font-size: 20px;
   }
-}
 
-.main-nav__link--black {
-  @media (min-width: @desktop-width) {
-    color: black;
+  &--current {
+    @media (min-width: @tablet-width) {
+      border-bottom: 2px solid @basic-green;
+      padding-bottom: 9px;
+    }
+
+    @media (min-width: @desktop-width) {
+      border-color: @basic-white;
+    }
+  }
+
+  &--green-bottom {
+    @media (min-width: @tablet-width) {
+      border-bottom: 2px solid @basic-green;
+      padding-bottom: 9px;
+    }
+  }
+
+  &:hover {
+    @media (min-width: @tablet-width) {
+      opacity: 0.6;
+      padding-bottom: 9px;
+      border-bottom: 2px solid @basic-black;
+    }
+
+    @media (min-width: @desktop-width) {
+      border-bottom: 2px solid @basic-white;
+    }
+  }
+
+  &--black {
+    &:hover {
+      border-bottom: 2px solid @basic-black;
+    }
+
+    &:active {
+      border: none;
+      opacity: 0.3;
+    }
+
+    @media (min-width: @desktop-width) {
+      color: black;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
-
 
 .main-nav__logo-link {
   margin-right: 8px;

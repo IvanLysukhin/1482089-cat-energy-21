@@ -94,3 +94,11 @@
     left: -3px;
   }
 }
+
+.radio-form__input:not([disabled]):hover + .radio-form__label::before {
+  border-color: @hover-grey;
+}
+
+.radio-form__input[disabled] + .radio-form__label {
+  opacity: 0.3;
+}

@@ -49,4 +49,16 @@
     font-size: 20px;
     .main-fonts;
   }
+
+  &:focus {
+    border: 2px solid @special_dark-grey;
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  &:invalid {
+    border: 2px solid @error-red;
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
 }

@@ -90,3 +90,11 @@
     left: 12px;
   }
 }
+
+.additionally-form__input:not([disabled]):hover + .additionally-form__label::before {
+  border-color: @hover-grey;
+}
+
+.additionally-form__input[disabled] + .additionally-form__label {
+  opacity: 0.3;
+}

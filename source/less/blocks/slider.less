@@ -24,6 +24,19 @@
   background: transparent;
   border: none;
   padding: 0;
+  position: relative;
+  z-index: 1;
+  border-bottom: 2px dotted @toggle-border-grey;
+  cursor: pointer;
+
+  &:hover {
+    border-style: solid;
+  }
+
+  &:active {
+    border: none;
+    padding-bottom: 2px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -50,17 +63,36 @@
     background-color: @toggle-border-grey;
     border: none;
     position: relative;
+    z-index: 1;
 
     &::before {
       content: "";
       position: absolute;
       top: -12px;
       left: 46%;
-      background-color: @basic-green;
-      width: 8px;
-      height: 8px;
-      border: 13px solid @basic-white;
+      background-color: @basic-white;
+      background-image: url("../img/slider-control.svg");
+      background-repeat: no-repeat;
+      background-position: 50%;
+      width: 31px;
+      height: 31px;
+      border: 2px solid @toggle-border-grey;
       border-radius: 50%;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+      cursor: pointer;
+    }
+
+    &:hover {
+      &::before {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+      }
+    }
+
+    &:active {
+      &::before {
+        border-color: @basic-green;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      }
     }
   }
 
