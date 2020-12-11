@@ -120,16 +120,20 @@
           <div class="slider">
             <div class="slider__wrapper">
               <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/slider-cat-desktop.webp 1x, img/webp/slider-cat-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/slider-cat.webp 1x, img/webp/slider-cat@2x.webp 2x">
-                <source type="image/webp" srcset="img/webp/before-mobile.webp 1x, img/webp/before-mobile@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/slider-cat-desktop.png 1x, img/slider-cat-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/slider-cat.png 1x, img/slider-cat@2x.png 2x">
-                <img class="slider__pic slider__pic--before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Котик до программы">
+                <source type="image/webp" srcset="img/webp/cat-fat.webp 1x, img/webp/cat-fat@2x.webp 2x">
+                <img class="slider__pic slider__pic--before slider__pic--on slider__pic--no-js" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Котик до программы">
               </picture>
               <picture>
-                <source type = "image/webp" srcset="img/webp/after-mobile.webp 1x, img/webp/after-mobile@2x.webp 2x">
-                <img class="slider__pic slider__pic--after" src="img/after-mobile.png" srcset="img/after-mobile@2x.png" width="251" height="240" alt="Котик после программы">
+                <source type = "image/webp" srcset="img/webp/cat-skinny.webp 1x, img/webp/cat-skinny@2x.webp 2x">
+                <img class="slider__pic slider__pic--after slider__pic--off slider__pic--no-js" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png" width="251" height="240" alt="Котик после программы">
+              </picture>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/slider-cat-desktop.webp 1x, img/webp/slider-cat-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/slider-cat.webp 1x, img/webp/slider-cat@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/cat-fat.webp 1x, img/webp/cat-fat@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/slider-cat-desktop.png 1x, img/slider-cat-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/slider-cat.png 1x, img/slider-cat@2x.png 2x">
+                <img class="slider__pic slider__pic--without-js" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Котик до программы">
               </picture>
               <div class="slider__toggle-box">
                 <button class="slider__button slider__button--before" type="button">Было</button>
