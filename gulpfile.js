@@ -166,6 +166,7 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     sprite,
     copy,
     createWebp
