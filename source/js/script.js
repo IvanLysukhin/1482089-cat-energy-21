@@ -1,20 +1,11 @@
 let logoBox = document.querySelector('.main-nav__logo-box');
 let menuButton = document.querySelector('.main-nav__button');
 let menu = document.querySelector('.main-nav__list');
-let beforeButton = document.querySelector('.slider__button--before');
-let afterButton = document.querySelector('.slider__button--after');
-let fatCat = document.querySelector('.slider__pic--before');
-let skinnyCat = document.querySelector('.slider__pic--after');
-let sliderCat = document.querySelector('.slider__pic--without-js');
-let sliderBar = document.querySelector('.slider__bar');
+
 
 logoBox.classList.remove('main-nav__logo-box--no-js');
 menuButton.classList.remove('main-nav__button--no-js');
 menu.classList.remove('main-nav__list--no-js');
-fatCat.classList.remove('slider__pic--no-js');
-skinnyCat.classList.remove('slider__pic--no-js');
-sliderCat.classList.remove('slider__pic--without-js');
-sliderCat.classList.add('slider__pic--off');
 
 menuButton.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -22,7 +13,21 @@ menuButton.addEventListener('click', function (evt) {
   menuButton.classList.toggle('main-nav__button--opened');
   menu.classList.toggle('main-nav__list--closed');
   menu.classList.toggle('main-nav__list--opened');
+  console.log('Клик по кнопке');
 })
+
+
+let beforeButton = document.querySelector('.slider__button--before');
+let afterButton = document.querySelector('.slider__button--after');
+let fatCat = document.querySelector('.slider__pic--before');
+let skinnyCat = document.querySelector('.slider__pic--after');
+let sliderCat = document.querySelector('.slider__pic--without-js');
+let sliderBar = document.querySelector('.slider__bar');
+
+fatCat.classList.remove('slider__pic--no-js');
+skinnyCat.classList.remove('slider__pic--no-js');
+sliderCat.classList.remove('slider__pic--without-js');
+sliderCat.classList.add('slider__pic--off');
 
 beforeButton.addEventListener('click', function (evt) {
   evt.preventDefault();
