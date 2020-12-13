@@ -1,13 +1,35 @@
 .additionally-form {
-  //.right-title-green-line(-164px; -11px);
 
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    width: 136px;
+    height: 2px;
+    top: 14px;
+    right: -20px;
+
+    @media (min-width: @tablet-width) {
+      width: 446px;
+      right: -69px;
+    }
+  }
+
+  &:before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      width: 30px;
+      height: 2px;
+      top: 17px;
+      left: -68px;
+    }
+  }
   @media (min-width: @tablet-width) {
-    //.left-title-green-line(-106%; -8px);
-    //.right-title-green-line(-252px; -8px);
   }
 
   @media (min-width: @desktop-width) {
-    //.left-title-green-line(-103%; -8px);
     grid-column-start: 1;
     grid-column-end: -1;
   }

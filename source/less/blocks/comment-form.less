@@ -1,6 +1,31 @@
 .comment-form {
-  //.right-title-green-line(-141px; -11px);
 
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    width: 158px;
+    height: 2px;
+    top: 17px;
+    right: -20px;
+
+    @media (min-width: @tablet-width) {
+      width: 478px;
+      right: -69px;
+    }
+  }
+
+  &:before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      width: 30px;
+      height: 2px;
+      top: 17px;
+      left: -68px;
+    }
+  }
   @media (min-width: @tablet-width) {
     margin-bottom: 42px;
     //.left-title-green-line(-106%; -8px);

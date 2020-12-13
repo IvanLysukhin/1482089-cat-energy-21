@@ -1,6 +1,32 @@
 .contact-form {
-  //.right-title-green-line(-201px; -35px);
   margin-top: 26px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    width: 99px;
+    height: 2px;
+    top: 17px;
+    right: -20px;
+
+    @media (min-width: @tablet-width) {
+      width: 138px;
+      right: -65px;
+    }
+  }
+
+  &:before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      width: 30px;
+      height: 2px;
+      top: 17px;
+      left: -68px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     margin-top: 66px;
@@ -149,5 +175,13 @@
     padding-left: 22px;
     padding-top: 9px;
     padding-bottom: 12px;
+  }
+}
+
+.contact-form__shift {
+  display: none;
+
+  @media (max-width: @mobile-width-only) {
+    display: block;
   }
 }
