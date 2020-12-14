@@ -1,10 +1,10 @@
 .contact-form {
   margin-top: 26px;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
-    background-color: #68b738;
+    background-color: @basic-green;
     width: 99px;
     height: 2px;
     top: 17px;
@@ -17,15 +17,15 @@
 
     @media (min-width: @desktop-width) {
       width: 780px;
-      right: -108px
+      right: -108px;
     }
   }
 
-  &:before {
+  &::before {
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
-      background-color: #68b738;
+      background-color: @basic-green;
       width: 30px;
       height: 2px;
       top: 17px;
@@ -41,12 +41,9 @@
   @media (min-width: @tablet-width) {
     margin-top: 66px;
     margin-bottom: 39px;
-    //.left-title-green-line(-106%; -8px);
-    //.right-title-green-line(-555px; -8px);
   }
 
   @media (min-width: @desktop-width) {
-    //.left-title-green-line(-103%; -8px);
     margin-top: 39px;
     grid-column-start: 1;
     grid-column-end: -1;

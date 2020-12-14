@@ -1,9 +1,8 @@
 .additionally-form {
-
-  &:after {
+  &::after {
     content: "";
     position: absolute;
-    background-color: #68b738;
+    background-color: @basic-green;
     width: 136px;
     height: 2px;
     top: 14px;
@@ -19,14 +18,13 @@
       right: -108px;
       top: 17px;
     }
-
   }
 
-  &:before {
+  &::before {
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
-      background-color: #68b738;
+      background-color: @basic-green;
       width: 30px;
       height: 2px;
       top: 17px;

@@ -21,7 +21,7 @@
   margin-top: 21px;
   position: relative;
 
-  &:before {
+  &::before {
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
@@ -40,7 +40,7 @@
     }
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     background-color: @basic-green;
@@ -55,6 +55,7 @@
       top: 15px;
       right: -29px;
     }
+
     @media (min-width: @desktop-width) {
       width: 950px;
       height: 2px;
