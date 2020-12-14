@@ -65,6 +65,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 64px;
+    padding-right: 10px;
   }
 }
 
@@ -90,6 +91,13 @@
       background-repeat: no-repeat;
       top: -9px;
       right: 1px;
+
+      @media (min-width: @tablet-width) {
+        background-image: url("../img/border-tablet.svg");
+        width: 162px;
+        height: 72px;
+        right: -7px;
+      }
     }
   }
 
@@ -105,6 +113,13 @@
       background-repeat: no-repeat;
       top: -9px;
       right: -11px;
+
+      @media (min-width: @tablet-width) {
+        background-image: url("../img/border-tablet-5.svg");
+        width: 162px;
+        height: 72px;
+        right: -25px;
+      }
     }
 
     @media (min-width: @tablet-width) {

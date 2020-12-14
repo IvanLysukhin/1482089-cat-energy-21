@@ -1,17 +1,27 @@
 .benefits {
   .main-fonts;
-  .wrapper(87.5%);
   padding-bottom: 35px;
 
   @media (min-width: @tablet-width) {
-    .wrapper(92%);
     padding-top: 16px;
     padding-bottom: 22px;
+    border-bottom: 1px solid @border-dark-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 41px;
+  }
+}
+
+.benefits__wrapper {
+  .wrapper(87.5%);
+
+  @media (min-width: @tablet-width) {
+    .wrapper(92%);
   }
 
   @media (min-width: @desktop-width) {
     .wrapper(1220px);
-    padding-top: 41px;
   }
 }
 

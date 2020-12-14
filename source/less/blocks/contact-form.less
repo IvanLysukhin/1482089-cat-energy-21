@@ -14,6 +14,11 @@
       width: 138px;
       right: -65px;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 780px;
+      right: -108px
+    }
   }
 
   &:before {
@@ -25,6 +30,11 @@
       height: 2px;
       top: 17px;
       left: -68px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 68px;
+      left: -109px;
     }
   }
 
@@ -71,7 +81,7 @@
 }
 
 .contact-form__item {
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   display: flex;
   align-items: baseline;
 
@@ -104,9 +114,9 @@
       background-image: url("../img/icon-mail-green.svg");
       background-color: transparent;
       border: 2px solid @special_dark-grey;
-      padding-left: 22px;
+      padding-left: 13px;
       padding-top: 9px;
-      padding-bottom: 12px;
+      padding-bottom: 9px;
     }
 
     &:invalid {
@@ -172,7 +182,7 @@
 
   &:invalid {
     border: 2px solid @error-red;
-    padding-left: 22px;
+    padding-left: 12px;
     padding-top: 9px;
     padding-bottom: 12px;
   }
