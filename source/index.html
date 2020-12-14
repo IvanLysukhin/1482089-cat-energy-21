@@ -5,31 +5,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body page__body--background ">
   <header class="page-header">
     <nav class="main-nav main-nav__wrapper">
-      <div class="main-nav__logo-box">
-        <a class="main-nav__logo-link" href="#">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="main-nav__logo" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-          </picture>
-        </a>
-        <a class="main-nav__link headline" href="#">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/cat-energy-logo-tablet.svg">
-          <img class="main-nav__logo-word" src="img/cat-energy-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
-          </picture>
-        </a>
-        <button class="main-nav__button main-nav__button--closed" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+      <div class="main-nav__logo-box main-nav__logo-box--no-js">
+          <a class="main-nav__logo-link" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__logo" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+          <a class="main-nav__link headline" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-energy-logo-tablet.svg">
+              <img class="main-nav__logo-word" src="img/cat-energy-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+          <button class="main-nav__button main-nav__button--no-js main-nav__button--closed" type="button" aria-label="Открыть, закрыть меню"></button>
       </div>
-      <ul class="main-nav__list main-nav__list--closed">
+      <ul class="main-nav__list main-nav__list--no-js main-nav__list--closed">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Главная</a>
+          <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -43,7 +46,6 @@
   <main class="page-main">
     <h1 class="visually-hidden">Магазин функционального питания для котов</h1>
     <section class="preview">
-<!--      <div class="preview__overlay">-->
         <div class="preview__wrapper">
           <h2 class="preview__title">Функциональное<br> питание для котов</h2>
           <p class="preview__text">Занялся собой? Займись котом!</p>
@@ -55,10 +57,8 @@
             <source media="(min-width: 768px)" srcset="img/index-preview-food-tablet.png 1x, img/index-preview-food-tablet@2x.png 2x">
             <img class="preview__pic" src="img/index-preview-food.png" srcset="img/index-preview-food@2x.png 2x" width="280" height="270" alt="Изображение Cat Energy с курицей">
           </picture>
-<!--          <img class="preview__cat-pic" src="img/big-background-cat-green.jpg" width="720" height="694" alt="Изображение Котика">-->
           <a class="preview__link button " href="form.html">Подобрать программу</a>
         </div>
-<!--      </div>-->
     </section>
     <section class="programs">
       <h2 class="visually-hidden">Типы программ</h2>
@@ -76,29 +76,33 @@
       </ul>
     </section>
     <section class="benefits">
-      <h2 class="visually-hidden">Преимущества Cat Energy</h2>
-      <h3 class="benefits__title">Как это работает</h3>
-      <ul class="benefits__list">
-        <li class="benefits__item benefits__item--leaf">
-          <p class="benefits__description">Функциональное питание содержит только полезные питательные вещества.</p>
-        </li>
-        <li class="benefits__item benefits__item--tub">
-          <p class="benefits__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-        </li>
-        <li class="benefits__item benefits__item--eat">
-          <p class="benefits__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-        </li>
-        <li class="benefits__item  benefits__item--alarm">
-          <p class="benefits__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
-        </li>
-      </ul>
+      <div class="benefits__wrapper">
+        <h2 class="visually-hidden">Преимущества Cat Energy</h2>
+        <h3 class="benefits__title">Как это работает</h3>
+        <ul class="benefits__list">
+          <li class="benefits__item benefits__item--leaf">
+            <p class="benefits__description">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="benefits__item benefits__item--tub">
+            <p class="benefits__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.</p>
+          </li>
+          <li class="benefits__item benefits__item--eat">
+            <p class="benefits__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="benefits__item  benefits__item--alarm">
+            <p class="benefits__description">Уже через месяц наслаждайтесь изменениями к лучшему
+              вашего&nbsp;питомца!</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
       <div class="example__background">
         <div class="example__desktop">
           <div class="example__wrapper">
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой<br class="example__shift"> обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <div class="example__flex-box">
               <dl class="example__list">
                 <div class="example__item">
@@ -116,14 +120,21 @@
           <div class="slider">
             <div class="slider__wrapper">
               <picture>
+                <source type="image/webp" srcset="img/webp/cat-fat.webp 1x, img/webp/cat-fat@2x.webp 2x">
+                <img class="slider__pic slider__pic--before slider__pic--on slider__pic--no-js" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Котик до программы">
+              </picture>
+              <picture>
+                <source type = "image/webp" srcset="img/webp/cat-skinny.webp 1x, img/webp/cat-skinny@2x.webp 2x">
+                <img class="slider__pic slider__pic--after slider__pic--off slider__pic--no-js" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png" width="251" height="240" alt="Котик после программы">
+              </picture>
+              <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/slider-cat-desktop.webp 1x, img/webp/slider-cat-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/slider-cat.webp 1x, img/webp/slider-cat@2x.webp 2x">
-                <source type="image/webp" srcset="img/webp/before-mobile.webp 1x, img/webp/before-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/cat-fat.webp 1x, img/webp/cat-fat@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/slider-cat-desktop.png 1x, img/slider-cat-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/slider-cat.png 1x, img/slider-cat@2x.png 2x">
-                <img class="slider__pic slider__pic--before" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Котик до программы">
+                <img class="slider__pic slider__pic--without-js" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Котик до программы">
               </picture>
-              <img class="slider__pic slider__pic--after" src="img/after-mobile.png" srcset="img/after-mobile@2x.png" width="251" height="240" alt="Котик после программы">
               <div class="slider__toggle-box">
                 <button class="slider__button slider__button--before" type="button">Было</button>
                 <div class="slider__toggle">
@@ -189,8 +200,8 @@
         </ul>
       </div>
       <div class="copyright">
-        <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/21">HTML Academy</a>
-        <a class="copyright__link " href="https://up.htmlacademy.ru/adaptive/21">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link " href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__icon" width="27" height="34">
             <use xlink:href="img/svg-sprite.svg#html-academy-logo"></use>
           </svg>
@@ -198,6 +209,6 @@
       </div>
     </footer>
   </main>
+<script src="js/script.min.js"></script>
 </body>
-
 </html>

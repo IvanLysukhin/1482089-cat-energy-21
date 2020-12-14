@@ -17,8 +17,12 @@
   .wrapper (87.5%);
 
   @media (min-width: @tablet-width) {
+    .wrapper(82%);
     margin-top: 67px;
-    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
   }
 }
 
@@ -40,13 +44,22 @@
   .border-grey;
   flex-grow: 1;
   margin-left: 17px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     padding-top: 11px;
     padding-bottom: 9px;
     padding-left: 21px;
-    margin-left: 18px;
+    margin-left: 23px;
     font-size: 20px;
     .main-fonts;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px @special_dark-grey;
+  }
+
+  &:invalid {
+    box-shadow: 0 0 0 2px @error-red;
   }
 }

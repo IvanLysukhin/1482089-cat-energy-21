@@ -34,7 +34,7 @@
 
 .social__link {
   display: block;
-  padding: 20px 15px;
+  padding: 18px 15px;
 
   @media (min-width: @tablet-width) {
     padding: 19px 10px;
@@ -67,4 +67,20 @@
       height: 32px;
     }
   }
+}
+
+
+.social__link:hover .social__icon--vk,
+.social__link:hover .social__icon--inst {
+  fill: @basic-green;
+}
+
+.social__link:hover .social__icon--fb {
+  stroke: @basic-green;
+}
+
+.social__link:active .social__icon--vk,
+.social__link:active .social__icon--inst,
+.social__link:active .social__icon--fb {
+  opacity: 0.3;
 }

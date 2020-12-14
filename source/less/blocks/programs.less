@@ -38,7 +38,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 50px;
+    padding-right: 26px;
   }
 }
 
@@ -133,6 +133,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
+    padding-right: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -149,6 +150,10 @@
   padding-right: 45px;
   position: relative;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -157,7 +162,12 @@
     background-image: url("../img/icon-arrow.svg");
     background-repeat: no-repeat;
     top: 8px;
-    right: -6px;
+    right: 5px;
+
+    @media (min-width: @tablet-width) {
+      top: 11px;
+      right: -3px;
+    }
   }
 
   @media (min-width: @tablet-width) {

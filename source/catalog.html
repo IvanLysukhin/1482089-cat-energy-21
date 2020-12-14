@@ -4,12 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page__body">
 <header class="page-header">
   <nav class="main-nav main-nav__wrapper">
-    <div class="main-nav__logo-box">
+    <div class="main-nav__logo-box main-nav__logo-box--no-js">
       <a class="main-nav__logo-link" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -23,14 +26,14 @@
           <img class="main-nav__logo-word" src="img/cat-energy-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
         </picture>
       </a>
-      <button class="main-nav__button main-nav__button--closed" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+      <button class="main-nav__button main-nav__button--no-js main-nav__button--closed" type="button" aria-label="Открыть, закрыть меню"></button>
     </div>
-    <ul class="main-nav__list main-nav__list--closed">
+    <ul class="main-nav__list main-nav__list--no-js main-nav__list--closed">
       <li class="main-nav__item">
         <a class="main-nav__link main-nav__link--black" href="index.html">Главная</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link main-nav__link--black" href="#">Каталог продукции</a>
+        <a class="main-nav__link main-nav__link--black main-nav__link--green-bottom" href="#">Каталог продукции</a>
       </li>
       <li class="main-nav__item">
         <a class="main-nav__link main-nav__link--black" href="form.html">Подбор программы</a>
@@ -269,7 +272,6 @@
     </div>
     <div class="gift">
       <h2 class="visually-hidden">Подарок при заказе</h2>
-<!--      <img class="gift__pic" src="img/icon-gift.svg" width="78" height="80" alt="иконка подарка">-->
       <svg class="gift__pic" width="78" height="80">
         <use xlink:href="img/svg-sprite.svg#icon-gift"></use>
       </svg>
@@ -280,8 +282,8 @@
     <h2 class="visually-hidden">Контакты</h2>
     <div class="contacts__wrapper">
       <div class="contacts__box contacts__box--back-grey">
-        <p class="contacts__text">приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__shift">Санкт-Петербург</span></p>
+        <p class="contacts__text contacts__text--margin">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        <p class="contacts__address contacts__address--margin">ул. Большая Конюшенная, д. 19/8 <span class="contacts__shift">Санкт-Петербург</span></p>
       </div>
     </div>
     <picture>
@@ -329,8 +331,8 @@
       </ul>
     </div>
     <div class="copyright">
-      <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/21">HTML Academy</a>
-      <a class="copyright__link " href="https://up.htmlacademy.ru/adaptive/21">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link " href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="copyright__icon" width="27" height="34">
           <use xlink:href="img/svg-sprite.svg#html-academy-logo"></use>
         </svg>
@@ -338,5 +340,6 @@
     </div>
   </footer>
 </main>
+<script src="js/script.min.js"></script>
 </body>
 </html>

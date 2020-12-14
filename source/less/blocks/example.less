@@ -59,13 +59,13 @@
   font-size: 14px;
   line-height: 18px;
   color: @special_dark-grey;
-  padding-right: 5px;
   margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 64px;
+    padding-right: 10px;
   }
 }
 
@@ -79,9 +79,48 @@
 .example__item {
   text-align: center;
   margin-left: 12px;
+  position: relative;
+
+  &:last-of-type {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 124px;
+      height: 56px;
+      background-image: url("../img/border.svg");
+      background-repeat: no-repeat;
+      top: -9px;
+      right: 1px;
+
+      @media (min-width: @tablet-width) {
+        background-image: url("../img/border-tablet.svg");
+        width: 162px;
+        height: 72px;
+        right: -7px;
+      }
+    }
+  }
 
   &:first-of-type {
     margin-right: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 124px;
+      height: 56px;
+      background-image: url("../img/border.svg");
+      background-repeat: no-repeat;
+      top: -9px;
+      right: -11px;
+
+      @media (min-width: @tablet-width) {
+        background-image: url("../img/border-tablet-5.svg");
+        width: 162px;
+        height: 72px;
+        right: -25px;
+      }
+    }
 
     @media (min-width: @tablet-width) {
       margin-right: 55px;

@@ -18,14 +18,61 @@
   line-height: 24px;
   color: @basic-black;
   margin-bottom: 37px;
+  margin-top: 21px;
+  position: relative;
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      background-color: @basic-green;
+      width: 31px;
+      height: 2px;
+      top: 15px;
+      left: -31px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 67px;
+      height: 2px;
+      top: 15px;
+      left: -108px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: @basic-green;
+    width: 54px;
+    height: 2px;
+    top: 17px;
+    right: -20px;
+
+    @media (min-width: @tablet-width) {
+      width: 325px;
+      height: 2px;
+      top: 15px;
+      right: -29px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 950px;
+      height: 2px;
+      right: -410px;
+    }
+  }
+
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     padding-left: 36px;
+    margin-top: -5px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
+    margin-top: 27px;
   }
 }
 
