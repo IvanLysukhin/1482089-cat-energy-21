@@ -17,8 +17,12 @@
   .wrapper (87.5%);
 
   @media (min-width: @tablet-width) {
+    .wrapper(82%);
     margin-top: 67px;
-    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
   }
 }
 
@@ -40,6 +44,8 @@
   .border-grey;
   flex-grow: 1;
   margin-left: 17px;
+  box-sizing: border-box;
+  height: 44px;
 
   @media (min-width: @tablet-width) {
     padding-top: 11px;
@@ -51,14 +57,10 @@
   }
 
   &:focus {
-    border: 2px solid @special_dark-grey;
-    padding-top: 10px;
-    padding-bottom: 8px;
+    box-shadow: 0 0 0 2px @special_dark-grey;
   }
 
   &:invalid {
-    border: 2px solid @error-red;
-    padding-top: 10px;
-    padding-bottom: 8px;
+    box-shadow: 0 0 0 2px @error-red;
   }
 }

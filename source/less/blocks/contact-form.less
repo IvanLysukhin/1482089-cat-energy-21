@@ -5,48 +5,37 @@
     content: "";
     position: absolute;
     background-color: @basic-green;
-    width: 99px;
+    width: 90%;
     height: 2px;
-    top: 17px;
-    right: -20px;
+    top: 15px;
+    right: 0;
 
     @media (min-width: @tablet-width) {
-      width: 138px;
-      right: -65px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 780px;
-      right: -108px;
-    }
-  }
-
-  &::before {
-    @media (min-width: @tablet-width) {
-      content: "";
-      position: absolute;
-      background-color: @basic-green;
-      width: 30px;
-      height: 2px;
-      top: 17px;
-      left: -68px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 68px;
-      left: -109px;
+      width: 100%;
     }
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: 66px;
+    margin-top: 79px;
     margin-bottom: 39px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 39px;
+    margin-bottom: 3px;
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+}
+
+.contact-form__title {
+  background-color: @basic-white;
+  z-index: 1;
+  width: 203px;
+
+  @media (min-width: @tablet-width) {
+    width: 554px;
+    padding-left: 28px;
   }
 }
 
@@ -57,10 +46,12 @@
   margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
+    .wrapper(93%);
     margin-top: 82px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 95%;
     flex-direction: row;
     justify-content: space-between;
     column-gap: 56px;
@@ -96,16 +87,19 @@
   padding-left: 14px;
   padding-top: 9px;
   padding-bottom: 11px;
+  padding-right: 5px;
   .border-grey;
   flex-grow: 1;
   margin-left: 11px;
   font-size: 16px;
   .main-fonts;
+  box-sizing: border-box;
+  height: 45px;
 
   &--mail {
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
-    background-position: top 17px right 14px;
+    background-position: 94% 50%;
 
     &:disabled {
       background-image: url("../img/icon-mail-green.svg");
@@ -119,24 +113,17 @@
     &:invalid {
       background-image: url("../img/icon-mail-red.svg");
     }
-
-    @media (min-width: @desktop-width) {
-      background-position: top 18px right 19px;
-    }
   }
 
   &--phone {
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
-    background-position: top 14px right 12px;
+    background-position: 94% 50%;
 
     &:disabled {
       background-image: url("../img/icon-phone-green.svg");
       background-color: transparent;
-      border: 2px solid @special_dark-grey;
-      padding-left: 22px;
-      padding-top: 9px;
-      padding-bottom: 12px;
+      box-shadow: 0 0 0 2px @special_dark-grey;
     }
 
     &:invalid {
@@ -171,17 +158,11 @@
   }
 
   &:focus {
-    border: 2px solid @special_dark-grey;
-    padding-left: 22px;
-    padding-top: 9px;
-    padding-bottom: 12px;
+    box-shadow: 0 0 0 2px @special_dark-grey;
   }
 
   &:invalid {
-    border: 2px solid @error-red;
-    padding-left: 12px;
-    padding-top: 9px;
-    padding-bottom: 12px;
+    box-shadow: 0 0 0 2px @error-red;
   }
 }
 

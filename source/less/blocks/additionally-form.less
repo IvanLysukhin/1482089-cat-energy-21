@@ -1,45 +1,33 @@
 .additionally-form {
+
   &::after {
     content: "";
     position: absolute;
     background-color: @basic-green;
-    width: 136px;
+    width: 90%;
     height: 2px;
-    top: 14px;
-    right: -20px;
+    top: 15px;
+    right: 0;
 
     @media (min-width: @tablet-width) {
-      width: 446px;
-      right: -69px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 1080px;
-      right: -108px;
-      top: 17px;
-    }
-  }
-
-  &::before {
-    @media (min-width: @tablet-width) {
-      content: "";
-      position: absolute;
-      background-color: @basic-green;
-      width: 30px;
-      height: 2px;
-      top: 17px;
-      left: -68px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 68px;
-      left: -109px;
+      width: 100%;
     }
   }
 
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: -1;
+  }
+}
+
+.additionally-form__title {
+  background-color: @basic-white;
+  z-index: 1;
+  width: 166px;
+
+  @media (min-width: @tablet-width) {
+    width: 253px;
+    padding-left: 28px;
   }
 }
 
@@ -52,12 +40,14 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    .wrapper(92%);
     margin-top: 62px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 95%;
     column-gap: 105px;
-    margin-bottom: 33px;
+    margin-bottom: 29px;
   }
 }
 
