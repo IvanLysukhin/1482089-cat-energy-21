@@ -1,0 +1,45 @@
+.additional {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      width: 100%;
+      height: 2px;
+      top: 41px;
+      right: 0;
+    }
+  }
+}
+
+.additional__grid {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    width: 90%;
+    height: 2px;
+    top: 15px;
+    right: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper(1295px);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 27px;
+    margin-bottom: 86px;
+  }
+}

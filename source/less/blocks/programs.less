@@ -150,10 +150,6 @@
   padding-right: 45px;
   position: relative;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -172,6 +168,16 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1.4);
+    }
   }
 }
 

@@ -1,5 +1,9 @@
-.form-box--wrapper {
+.form-box__wrapper {
   .wrapper(89%);
+
+  @media (min-width: @desktop-width) {
+    .wrapper(1295px);
+  }
 }
 
 .form-box__desktop-wrapper {
@@ -22,13 +26,11 @@
 
 
   @media (min-width: @tablet-width) {
-    //.wrapper(92%);
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    //.wrapper(1220px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(7, auto);
@@ -89,7 +91,7 @@
     .wrapper (1220px);
     grid-column-start: 1;
     grid-column-end: -1;
-    margin-bottom: 81px;
+    margin-bottom: 86px;
   }
 }
 
